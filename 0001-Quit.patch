@@ -1,0 +1,28 @@
+From e2f01bcca39793329df6b8b41fa1ad20d088f5fd Mon Sep 17 00:00:00 2001
+From: nemanjan00 <nemanjan00@gmail.com>
+Date: Wed, 10 Jun 2020 14:36:27 +0200
+Subject: [PATCH] Quit
+
+---
+ main.qml | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/main.qml b/main.qml
+index fab583c..6c8c0f0 100644
+--- a/main.qml
++++ b/main.qml
+@@ -576,8 +576,9 @@ ApplicationWindow {
+     }
+ 
+     onClosing: function(event){
+-        event.accepted = false
+-        root.hide()
++        // event.accepted = false
++        // root.hide()
++        quitApp()
+     }
+ 
+     //
+-- 
+2.27.0
+
